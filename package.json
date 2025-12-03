@@ -19,8 +19,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "dependencies": {
-    "@opencode-ai/plugin": "1.0.85",
-    "execa": "^9.6.0"
+    "@opencode-ai/plugin": "1.0.85"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
