@@ -2,6 +2,9 @@
 
 This project uses Release Please for automated releases.
 
+> [!WARN]
+> Before doing anything, ensure that you've setup [Trusted Publishing](#npm-trusted-publishing).
+
 ## Release Workflow
 
 ### Conventional Commits
