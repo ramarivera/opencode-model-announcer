@@ -1,75 +1,120 @@
-# OpenCode Plugin Template
+# OpenCode Plugin Template Generator
 
-A template repository for creating OpenCode plugins with TypeScript, including build tooling, linting, testing, and release automation.
+🎉 Generate a new OpenCode plugin in seconds!
 
-## Features
+This is a generator repository for creating new [OpenCode](https://opencode.ai) plugins. It provides a starter template with all the scaffolding you need to build powerful OpenCode plugins.
 
-- 🏗️ TypeScript-based plugin architecture
-- 🔧 Mise task runner integration
-- 📦 Bun/npm build tooling
-- ✨ ESLint + Prettier formatting
-- 🧪 Vitest testing setup
-- 🚀 GitHub Actions CI/CD
-- 📝 Release automation with release-please
+## Quick Start
 
-## Getting Started
+### 1. Use this template
 
-1. **Clone this template:**
-   ```bash
-   cp -r opencode-plugin-template your-plugin-name
-   cd your-plugin-name
-   ```
+Click "Use this template" on GitHub or clone it:
 
-2. **Update package.json:**
-   - Change `name` to your plugin name
-   - Update `description`
-   - Update `repository.url`
+```bash
+git clone https://github.com/zenobi-us/opencode-plugin-template.git my-plugin
+cd my-plugin
+```
 
-3. **Install dependencies:**
-   ```bash
-   bun install
-   ```
+### 2. Run the generator
 
-4. **Implement your plugin in `src/index.ts`:**
-   ```typescript
-   import type { Plugin } from "@opencode-ai/plugin";
-   
-   export const YourPlugin: Plugin = async (ctx) => {
-     return {
-       tool: {
-         // Your plugin tools here
-       },
-     };
-   };
-   ```
+```bash
+bunx plop
+```
 
-5. **Test your plugin:**
-   ```bash
-   mise run test
-   ```
+Or if you prefer npm/yarn:
+
+```bash
+npm install
+npm run generate
+```
+
+### 3. Answer the prompts
+
+The generator will ask for:
+
+- **Plugin name** - kebab-case identifier (e.g., `my-awesome-plugin`)
+- **Description** - What your plugin does
+- **Author name** - Your name
+- **Author email** - Your email
+- **Repository URL** - GitHub repo URL
+- **GitHub org/username** - For workflow configuration
+
+### 4. Start developing!
+
+```bash
+cd my-plugin
+bun install
+mise run build
+```
+
+## What You Get
+
+After running the generator, you'll have:
+
+- ✅ TypeScript setup with modern tooling
+- ✅ ESLint + Prettier configuration
+- ✅ GitHub Actions workflows (build, lint, release)
+- ✅ OpenCode plugin scaffolding
+- ✅ Ready-to-use test setup
+- ✅ Clean git history with initial commit
+
+The generator cleans itself up - no template files or generator code left behind!
+
+## Project Structure
+
+Generated plugins have this structure:
+
+```
+my-plugin/
+├── src/
+│   ├── index.ts          # Plugin entry point
+│   ├── version.ts        # Version info
+│   └── commands/         # Your plugin commands
+├── .github/
+│   └── workflows/        # CI/CD workflows
+├── package.json          # Dependencies and scripts
+├── tsconfig.json         # TypeScript config
+└── README.md             # Your plugin's documentation
+```
 
 ## Development
 
-- `mise run build` - Build the plugin
-- `mise run test` - Run tests
-- `mise run lint` - Lint code
-- `mise run lint:fix` - Fix linting issues
-- `mise run format` - Format code with Prettier
+### Available Scripts
 
-## Installation in OpenCode
-
-Create or edit `~/.config/opencode/config.json`:
-
-```json
-{
-  "plugins": ["@your-scope/your-plugin-name"]
-}
+```bash
+bun install          # Install dependencies
+mise run build       # Build the plugin
+mise run format      # Format code
+mise run lint        # Lint code
+mise run test        # Run tests
+mise run dev         # Watch mode for development
 ```
 
-## Contributing
+### Publishing
 
-Contributions are welcome! Please file issues or submit pull requests on the GitHub repository.
+Your plugin is set up for publishing to npm with:
+
+```bash
+bun run build
+npm publish
+```
+
+See [package.json](template/package.json) for full details on the plugin template.
+
+## Learn More
+
+- [OpenCode Documentation](https://opencode.ai/docs)
+- [Plugin Development Guide](https://opencode.ai/docs/plugins)
+- [OpenCode GitHub](https://github.com/opencode-ai/opencode)
 
 ## License
 
-MIT License. See the [LICENSE](LICENSE) file for details.
+MIT
+
+## Support
+
+Need help?
+
+- Check the [OpenCode docs](https://opencode.ai/docs)
+- Open an issue on [GitHub](https://github.com/zenobi-us/opencode-plugin-template/issues)
+- Report bugs at https://github.com/sst/opencode

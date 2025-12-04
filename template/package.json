@@ -1,12 +1,16 @@
 {
-  "name": "@zenobius/opencode-plugin-template",
+  "name": "{{pluginName}}",
   "version": "0.1.0",
-  "description": "Template for OpenCode Plugins",
+  "description": "{{description}}",
+  "author": {
+    "name": "{{authorName}}",
+    "email": "{{authorEmail}}"
+  },
   "type": "module",
   "module": "src/index.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zenobi-us/opencode-plugin-template"
+    "url": "{{repositoryUrl}}"
   },
   "publishConfig": {
     "access": "public",
