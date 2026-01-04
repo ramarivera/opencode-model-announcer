@@ -31,3 +31,5 @@ The plugin hooks into `experimental.chat.messages.transform`. Right before the m
 `[SYSTEM: CURRENT_MODEL_ANNOUNCEMENT - The current model being used is: {friendlyName} ({provider}/{model}). Use this information to tailor your responses if necessary.]`
 
 🤖 _This content was generated with AI assistance using Claude Opus 4.5._
+
+> **Note**: Ironically, this README was generated when the project started, and I was actually using **Gemini 3 Pro**, not **Claude Opus 4.5**. With this plugin, the model would have known its true identity, and this disclaimer would have been accurate. This is exactly the problem I'm aiming to solve.
