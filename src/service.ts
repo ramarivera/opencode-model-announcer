@@ -1,4 +1,7 @@
-import type { Message, Part, OpencodeClient } from "@opencode-ai/sdk";
+import type { Message, Part } from "@opencode-ai/sdk";
+import type { PluginInput } from "@opencode-ai/plugin";
+
+type OpencodeClient = PluginInput["client"];
 
 export class ModelAnnouncerService {
   private client: OpencodeClient;
@@ -57,14 +60,10 @@ export class ModelAnnouncerService {
 
       if (!response.data) return undefined;
 
-      // The SDK types might differ slightly from the internal representation,
-      // but assuming the structure matches { [providerID]: { models: { [modelID]: { name: string } } } }
-      const providers = response.data as Record<
-        string,
-        { models: Record<string, { name: string }> }
-      >;
+      const data = response.data;
+      if (!data || !Array.isArray(data.all)) return undefined;
 
-      const provider = providers[providerID];
+      const provider = data.all.find((p) => p.id === providerID);
       if (!provider || !provider.models) return undefined;
 
       const model = provider.models[modelID];
