@@ -2,9 +2,9 @@
 
 ## Build & Test Commands
 
-- **Build**: `mise run build` or `bun build ./src/index.ts --outdir dist --target bun`
+- **Build**: `mise run build` or `bun run build` (builds JS + types)
 - **Test**: `mise run test` or `bun test`
-- **Single Test**: `bun test BackgroundTask.test.ts` (use file glob pattern)
+- **Single Test**: `bun test service.test.ts` (use file glob pattern)
 - **Watch Mode**: `bun test --watch`
 - **Lint**: `mise run lint` (eslint)
 - **Fix Lint**: `mise run lint:fix` (eslint --fix)
@@ -30,9 +30,8 @@
 
 - **NeverNesters**: avoid deeply nested structures. Always exit early.
 - **Strict mode**: enforced (`"strict": true`)
-- **Classes**: PascalCase (e.g., `BackgroundTask`, `BackgroundTaskManager`)
+- **Classes**: PascalCase (e.g., `ModelAnnouncerService`)
 - **Methods/properties**: camelCase
-- **Status strings**: use union types (e.g., `'pending' | 'running' | 'completed' | 'failed' | 'cancelled'`)
 - **Explicit types**: prefer explicit type annotations over inference
 - **Return types**: optional (not required but recommended for public methods)
 
@@ -62,4 +61,4 @@
 
 - **Type**: ES Module package for OpenCode plugin system
 - **Target**: Bun runtime, ES2021+
-- **Purpose**: Background task execution and lifecycle management
+- **Purpose**: Plugin that announces the current model identity to the LLM context
