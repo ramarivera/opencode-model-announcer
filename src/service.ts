@@ -13,19 +13,14 @@ export class ModelAnnouncerService {
   ): Promise<void> {
     if (!output.messages || output.messages.length === 0) return;
 
-    // Find the last user message
     const lastUser = output.messages.findLast((m) => m.info.role === "user");
     if (!lastUser) return;
 
-    // Check if we have model info.
-    // In MessageV2, 'user' role implies 'model' property exists.
-    // We cast to access it safely or rely on discriminated union if TS is smart enough.
     if (lastUser.info.role !== "user") return;
     const modelInfo = lastUser.info.model;
 
     const { providerID, modelID } = modelInfo;
 
-    // Check for existing announcement to avoid duplicates
     const alreadyAnnounced = lastUser.parts.some(
       (p) =>
         p.type === "text" &&
@@ -34,7 +29,6 @@ export class ModelAnnouncerService {
     );
     if (alreadyAnnounced) return;
 
-    // Get friendly name
     const name = await this.getModelName(providerID, modelID);
     const displayName = name
       ? `${name} (${providerID}/${modelID})`
@@ -42,7 +36,6 @@ export class ModelAnnouncerService {
 
     const announcement = `[SYSTEM: CURRENT_MODEL_ANNOUNCEMENT - The current model being used is: ${displayName}. Use this information to tailor your responses if necessary.]`;
 
-    // Inject synthetic part
     const part: Part = {
       type: "text",
       id: `synthetic-part-${Date.now()}`,
