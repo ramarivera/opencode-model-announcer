@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/ramarivera/opencode-model-announcer/compare/v0.1.2...v0.1.3) (2026-01-08)
+
+
+### Bug Fixes
+
+* **ci:** add id-token write permission for npm provenance ([1a8656b](https://github.com/ramarivera/opencode-model-announcer/commit/1a8656bba85cbb753982b42bc14270d7ad08d985))
+
 ## [0.1.2](https://github.com/ramarivera/opencode-model-announcer/compare/v0.1.1...v0.1.2) (2026-01-08)
 
 
