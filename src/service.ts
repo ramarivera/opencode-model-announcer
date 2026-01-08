@@ -40,7 +40,7 @@ export class ModelAnnouncerService {
       ? `${name} (${providerID}/${modelID})`
       : `${providerID}/${modelID}`;
 
-    const announcement = `[SYSTEM: CURRENT_MODEL_ANNOUNCEMENT - The current model being used is: ${displayName}. Use this information to tailor your responses if necessary.]`;
+    const announcement = `[SYSTEM: CURRENT_MODEL_ANNOUNCEMENT - You are ${displayName}. This message is SYNTHETIC and invisible to the user. Do not announce your identity unless explicitly asked.]`;
 
     const part: Part = {
       type: "text",

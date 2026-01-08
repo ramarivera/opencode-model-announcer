@@ -8,11 +8,14 @@ describe("ModelAnnouncerService", () => {
       provider: {
         list: vi.fn().mockResolvedValue({
           data: {
-            "test-provider": {
-              models: {
-                "test-model": { name: "Test Model Friendly Name" },
+            all: [
+              {
+                id: "test-provider",
+                models: {
+                  "test-model": { name: "Test Model Friendly Name" },
+                },
               },
-            },
+            ],
           },
         }),
       },
