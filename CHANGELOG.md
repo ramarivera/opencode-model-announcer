@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.0](https://github.com/ramarivera/opencode-model-announcer/compare/v0.2.4...v0.3.0) (2026-01-08)
+
+
+### Features
+
+* improve model announcement to prevent echoing ([77a3841](https://github.com/ramarivera/opencode-model-announcer/commit/77a38412e4d5d0ca31d9ad66d09c8e04152fa5e3))
+
 ## [0.2.4](https://github.com/ramarivera/opencode-model-announcer/compare/v0.2.3...v0.2.4) (2026-01-08)
 
 
