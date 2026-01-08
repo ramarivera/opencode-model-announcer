@@ -36,6 +36,9 @@ jobs:
           registry-url: "https://registry.npmjs.org"
         if: ${{ steps.release.outputs.release_created }}
 
+      - run: npm install -g npm@latest
+        if: ${{ steps.release.outputs.release_created }}
+
       - run: bun install --frozen-lockfile
         if: ${{ steps.release.outputs.release_created }}
 
