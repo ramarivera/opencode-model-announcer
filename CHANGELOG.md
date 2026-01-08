@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/ramarivera/opencode-model-announcer/compare/v0.2.0...v0.2.1) (2026-01-08)
+
+
+### Bug Fixes
+
+* **ci:** remove setup-node for OIDC publishing ([b396996](https://github.com/ramarivera/opencode-model-announcer/commit/b39699670f239f6483f07d69ca5e68531e156c87))
+
 ## [0.2.0](https://github.com/ramarivera/opencode-model-announcer/compare/v0.1.3...v0.2.0) (2026-01-08)
 
 
