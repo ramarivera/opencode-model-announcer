@@ -10,13 +10,15 @@ This plugin automatically injects the current model name into the chat context. 
 
 ## Installation
 
-Add it to your `~/.config/opencode/opencode.json`:
+```bash
+npm install @ramarivera/opencode-model-announcer
+```
+
+Or add it to your `~/.config/opencode/opencode.json`:
 
 ```json
 {
-  "plugin": [
-    "file:///Users/ramarivera/dev/opencode-model-announcer--ramarivera"
-  ]
+  "plugin": ["@ramarivera/opencode-model-announcer"]
 }
 ```
 
