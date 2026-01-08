@@ -38,4 +38,4 @@ The plugin hooks into `experimental.chat.messages.transform`. Right before the m
 
 ## Disclaimer
 
-This is a community plugin and is not affiliated with, endorsed by, or sponsored by [OpenCode](https://opencode.ai) or [SST](https://sst.dev).
+This is a community plugin and is not officially affiliated with, endorsed by, or sponsored by [OpenCode](https://opencode.ai) or [SST](https://sst.dev).
