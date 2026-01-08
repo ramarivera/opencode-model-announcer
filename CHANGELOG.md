@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/ramarivera/opencode-model-announcer/compare/v0.2.2...v0.2.3) (2026-01-08)
+
+
+### Bug Fixes
+
+* clarify disclaimer wording ([f7352fc](https://github.com/ramarivera/opencode-model-announcer/commit/f7352fc6b12d8526433e2c2b2774a2eb19778dfc))
+
 ## [0.2.2](https://github.com/ramarivera/opencode-model-announcer/compare/v0.2.1...v0.2.2) (2026-01-08)
 
 
