@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/ramarivera/opencode-model-announcer/compare/v0.2.1...v0.2.2) (2026-01-08)
+
+
+### Bug Fixes
+
+* **ci:** add back setup-node for OIDC registry configuration ([a6bc733](https://github.com/ramarivera/opencode-model-announcer/commit/a6bc733411e7d8e0667cf74c63442d18a5152e72))
+
 ## [0.2.1](https://github.com/ramarivera/opencode-model-announcer/compare/v0.2.0...v0.2.1) (2026-01-08)
 
 
