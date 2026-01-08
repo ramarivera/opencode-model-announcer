@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.2.4](https://github.com/ramarivera/opencode-model-announcer/compare/v0.2.3...v0.2.4) (2026-01-08)
+
+
+### Bug Fixes
+
+* **ci:** upgrade npm to latest for Trusted Publishing support ([daad955](https://github.com/ramarivera/opencode-model-announcer/commit/daad955a87fa14f1d36705234bfc7c65d71f0b38))
+* **ci:** use NPM_TOKEN for publishing ([b31a168](https://github.com/ramarivera/opencode-model-announcer/commit/b31a168d6de8492aa50e1fa6f2ebe8272b38d965))
+
+
+### Reverts
+
+* remove NODE_AUTH_TOKEN for OIDC ([edc71a1](https://github.com/ramarivera/opencode-model-announcer/commit/edc71a10d24f17cbf2878ecf2b3a925836023c1d))
+
 ## [0.2.3](https://github.com/ramarivera/opencode-model-announcer/compare/v0.2.2...v0.2.3) (2026-01-08)
 
 
