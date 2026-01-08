@@ -20,6 +20,8 @@ export class ModelAnnouncerService {
     const lastUser = output.messages.findLast((m) => m.info.role === "user");
     if (!lastUser) return;
 
+    // Check if we have model info.
+    // In MessageV2, 'user' role implies 'model' property exists.
     if (lastUser.info.role !== "user") return;
     const modelInfo = lastUser.info.model;
 
