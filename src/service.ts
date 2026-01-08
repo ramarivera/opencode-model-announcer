@@ -16,6 +16,7 @@ export class ModelAnnouncerService {
   ): Promise<void> {
     if (!output.messages || output.messages.length === 0) return;
 
+    // Find the last user message to inject the announcement
     const lastUser = output.messages.findLast((m) => m.info.role === "user");
     if (!lastUser) return;
 
