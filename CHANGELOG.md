@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/ramarivera/opencode-model-announcer/compare/v1.0.0...v1.0.1) (2026-01-13)
+
+
+### Bug Fixes
+
+* trigger npm publish for v1.0.1 ([f7460a7](https://github.com/ramarivera/opencode-model-announcer/commit/f7460a7e0de33ca7b4d18cfe64ae69228b081d85))
+
 ## [1.0.0](https://github.com/ramarivera/opencode-model-announcer/compare/v0.3.0...v1.0.0) (2026-01-13)
 
 
