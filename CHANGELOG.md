@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.0](https://github.com/ramarivera/opencode-model-announcer/compare/v0.3.0...v1.0.0) (2026-01-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** Requires opencode-ai >= 1.1.18
+
+### Bug Fixes
+
+* **deps:** update @opencode-ai/plugin to 1.1.18 for compatibility ([8a28bb0](https://github.com/ramarivera/opencode-model-announcer/commit/8a28bb05c06691b91568f830ca53de829e2c073b))
+
 ## [0.3.0](https://github.com/ramarivera/opencode-model-announcer/compare/v0.2.4...v0.3.0) (2026-01-08)
 
 

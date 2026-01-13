@@ -1,6 +1,6 @@
 {
   "name": "@ramarivera/opencode-model-announcer",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "OpenCode plugin that automatically announces the current model in the chat context.",
   "author": {
     "name": "Ramiro Rivera",
