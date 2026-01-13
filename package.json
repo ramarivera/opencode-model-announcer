@@ -30,7 +30,7 @@
     "build:types": "tsc --project tsconfig.build.json --noEmitOnError false"
   },
   "dependencies": {
-    "@opencode-ai/plugin": "1.0.223"
+    "@opencode-ai/plugin": "1.1.18"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
