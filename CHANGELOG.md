@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/ramarivera/opencode-model-announcer/compare/v1.0.1...v1.0.2) (2026-01-14)
+
+
+### Bug Fixes
+
+* add main field for Bun bundler compatibility ([a70134f](https://github.com/ramarivera/opencode-model-announcer/commit/a70134fc3903cb36886b209a8ee18ca96421abf3))
+
 ## [1.0.1](https://github.com/ramarivera/opencode-model-announcer/compare/v1.0.0...v1.0.1) (2026-01-13)
 
 
